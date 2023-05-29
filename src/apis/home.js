@@ -28,3 +28,13 @@ export const findHotAPI = () => {
     url: '/home/hot'
   })
 }
+/**
+ * @description: 获取商品模块
+ * @param {*}
+ * @return {*}
+ */
+export const findGoodsAPI = () => {
+  return httpInstance({
+    url: '/home/goods'
+  })
+}
