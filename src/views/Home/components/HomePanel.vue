@@ -1,12 +1,12 @@
 <script setup>
-//定义props
 defineProps({
   title: {
-    //主标题
-    type: String
+    type: String,
+    default: ''
   },
   subTitle: {
-    type: String
+    type: String,
+    default: ''
   }
 })
 </script>
@@ -21,7 +21,7 @@ defineProps({
         </h3>
       </div>
       <!-- 主体内容区域 -->
-      <slot />
+      <slot name="main" />
     </div>
   </div>
 </template>

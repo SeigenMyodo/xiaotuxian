@@ -6,10 +6,11 @@ export function getBannerAPI(params = {}) {
   const { distributionSite = '1' } = params
   return httpInstance({
     url: '/home/banner',
-    params: { distributionSite }
+    params: {
+      distributionSite
+    }
   })
 }
-
 /**
  * @description: 获取新鲜好物
  * @param {*}
@@ -20,23 +21,22 @@ export const findNewAPI = () => {
     url: '/home/new'
   })
 }
-
 /**
- * @description: 获取新鲜好物
+ * @description: 获得人气推荐
  * @param {*}
  * @return {*}
  */
 export const findHotAPI = () => {
   return httpInstance({
-    url: '/home/hot'
+    url: 'home/hot'
   })
 }
 /**
- * @description: 获取商品模块
+ * @description: 获取所有商品模块
  * @param {*}
  * @return {*}
  */
-export const findGoodsAPI = () => {
+export const getGoodsAPI = () => {
   return httpInstance({
     url: '/home/goods'
   })
